@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylepagehome.css">
+    <script src="jsfromhome.js" defer></script>
+
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+    <meta name="description" content="Simples e eficiente!.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://MatriX.com/pagina">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="author" content="MatriX Team">
+
+    <title>MatriX: Página Inicial</title>
+    <canvas id="matrix-bg"></canvas>
+
+<style>
+  #matrix-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: -1; /* fica atrás do conteúdo */
+    background: #000;
+  }
+</style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=IGlg75esXws&list=RDMxnf22xfZhA&index=12" target="_blank">Music</a></li>
+                <li><a href="https://www.todamateria.com.br/matrizes-resumo/" target="_blank">Sobre</a></li>
+                <li><a href="https://github.com/Yarlixz" target="_blank">Contato</a></li>
+            </ul>
+        </nav>
+
+        <p class="secao-label">// calculadora de função linear \\</p>
+ 
+<div class="neo">
+    <img src="aurafarm.png" class="neo-logo" alt="logo" />
+</div>
+
+  <div class="calc-wrap">
+    <div class="calc-linha">
+ 
+      <!-- plano cartesiano -->
+      <div class="calc-card calc-plano">
+        <p class="calc-card-titulo">plano cartesiano</p>
+        <canvas id="calc-canvas" width="240" height="240"></canvas>
+      </div>
+ 
+      <!-- inputs -->
+      <div class="calc-card calc-inputs">
+        <p class="calc-card-titulo">dois pontos</p>
+ 
+        <div class="calc-grid">
+          <div class="calc-inp-group">
+            <label>x₁</label>
+            <input id="x1" type="number" placeholder="0">
+          </div>
+          <div class="calc-inp-group">
+            <label>y₁</label>
+            <input id="y1" type="number" placeholder="0">
+          </div>
+        </div>
+ 
+        <p class="calc-sep">— ponto 2 —</p>
+ 
+        <div class="calc-grid">
+          <div class="calc-inp-group">
+            <label>x₂</label>
+            <input id="x2" type="number" placeholder="0">
+          </div>
+          <div class="calc-inp-group">
+            <label>y₂</label>   
+            <input id="y2" type="number" placeholder="0">
+          </div>
+        </div>
+ 
+        <div class="calc-erro" id="calc-erro">x₁ e x₂ não podem ser iguais</div>
+        <button class="calc-btn" onclick="calcular()">calcular →</button>
+      </div>
+    </div>
+ 
+    <!-- resultado -->
+    <div class="calc-card calc-resultado" id="calc-resultado">
+      <p class="calc-card-titulo">função encontrada</p>
+      <div class="calc-formula" id="calc-formula">y = ax + b</div>
+      <p class="calc-card-titulo">passo a passo</p>
+      <div class="calc-steps" id="calc-steps"></div>
+    </div>
+  </div>
+ 
+
+
+
+
+
+
+
+    <footer>
+  <div class="footer-left">
+    <img src="logomatrix.png" class="footer-logo" alt="logo" />
+    <span>© 2026 <strong>YARLIZARD</strong>. Todos os direitos reservados.</span>
+  </div>
+</footer>
+</body>
+</html>
